@@ -1,5 +1,5 @@
 import React from "react";
-import logoPP from "../../assets/LogoPP.jpg";
+import logoPP from "../../assets/Logo_svg.svg";
 import { NavLink } from "react-router-dom";
 
 const header = () => {
@@ -17,12 +17,12 @@ const header = () => {
               </NavLink>
             </li>
             <li>
-            <NavLink to="/agenda" className="font">
+              <NavLink to="/agenda" className="font">
                 Agenda
               </NavLink>
             </li>
             <li>
-            <NavLink to="/contact" className="font">
+              <NavLink to="/contact" className="font">
                 Contact
               </NavLink>
             </li>
