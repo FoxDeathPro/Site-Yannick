@@ -1,8 +1,8 @@
 .layout {
-    // background-color: rgb(1, 130, 146);
     font-family: "Montserrat", sans-serif;
-    background-color: rgb(224, 224, 224);
+    background-color: $background;
+
     main{
-      min-height: calc(100vh - 200px - 85px);
+      min-height: calc(100vh - $header-height - $footer-height);
     }
-    }
+}
