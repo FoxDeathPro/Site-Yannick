@@ -6,7 +6,8 @@
 
 :root {
     --main-bg-color: #F5F5F5;
-    --second-bg-color: rgb(0, 71, 115);
+    --second-bg-color:rgb(1,130,146);
+    --third-bg-color: rgb(0,31,41);
     --card-shadow-color: #666666;
     --primary-text-color: #000000;
     --secondary-text-color: #303030;
@@ -21,6 +22,7 @@
 
 $background: var(--main-bg-color) !default;
 $background-2: var(--second-bg-color) !default;
+$background-3: var(--third-bg-color) !default;
 $shadow: var(--card-shadow-color) !default;
 $main_text_color: var(--primary-text-color) !default;
 $second_text_color: var(--secondary-text-color) !default;
