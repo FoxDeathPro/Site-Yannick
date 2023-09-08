@@ -1,16 +1,22 @@
+// Import important !! (variables, themes...)
 @import "./themes/themes";
 @import "./utils/variables";
 @import "./utils/mixins";
 
+// Import Settings
 @import "./base/settings";
 @import "./base/typographie";
 
-@import "./layout/layout";
+// Import Components
 @import "./layout/footer";
 @import "./layout/header";
 @import "./pages//home.scss";
 
 @import "./components/card.scss";
+
+// Import Pages
+@import "./layout/layout";
+@import "./pages/tests";
 
 
 
