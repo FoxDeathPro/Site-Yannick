@@ -1,0 +1,74 @@
+.tests {
+    .cards {
+      width: 100%;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: white;
+      border-bottom: 2px dotted $background-2;
+  
+        .card {
+            position: relative;
+            width: 40%;
+            height: 250px;
+            background-color: $background-2;
+            box-shadow: 0 5px 20px $shadow;
+            padding: 5px;
+            overflow: hidden;
+            cursor: pointer;
+    
+            h2 {
+            padding-bottom: 15px;
+            }
+    
+            ul {
+    
+            }
+    
+            span.infos {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translate(50%, 50%);
+            background: white;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            transition: all 0.5s;
+    
+                span.icon {
+                    color: black;
+                    font-size: 1.5em;
+                    position: absolute;
+                    top: 32.5px;
+                    left: 35px;
+                }
+        
+                p {
+                    color: black;
+                    font-size: 1.5em;
+                    position: absolute;
+                    top: 30px;
+                    left: 85px;
+                    transition: 0.3s;
+                }
+            }
+    
+            &:hover {
+    
+                span.infos {
+                    width: 350px;
+                    border-radius: 25px;
+        
+                    span.icon {
+                    }
+            
+                    p {
+                    left: 65px;
+                    }
+                }
+            }
+        }
+    }
+}

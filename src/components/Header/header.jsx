@@ -18,7 +18,12 @@ const header = () => {
             </li>
             <li>
               <NavLink to="/agenda" className="font">
-                Agenda
+                L'entreprise
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/tests" className="font">
+                Tests
               </NavLink>
             </li>
             <li>
