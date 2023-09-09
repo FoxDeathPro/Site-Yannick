@@ -1,8 +1,8 @@
 import React from "react";
-import {AiOutlineArrowRight} from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import imgAgenda from "../../assets/Agenda.jpg";
 
 const Home = () => {
-
     function handleClick() {
         console.log("coucou");
     }
@@ -12,15 +12,29 @@ const Home = () => {
             <div className="card-animation">
                 <div>
                     <i></i>
-                    <h2>
-                    </h2>
-                    <p>
-
-                    </p>
+                    <h2></h2>
+                    <p></p>
                 </div>
             </div>
             <div className="popu">
-                <div className="truc">NICK</div>
+                <div className="truc">
+                    <div className="body-popup">
+                        <h3>
+                            Formation Niveau 1 <br />
+                            (Médical et Industrie)
+                        </h3>
+                        <p>
+                            Personne Compétente en Radioprotection et
+                            Renouvellement PCR Niveau 1
+                        </p>
+                        <div className="card-image">
+                            <img src={imgAgenda} />
+                        </div>
+
+                        <button className="button-maps"></button>
+                        <button className="button-contact"></button>
+                    </div>
+                </div>
             </div>
             <div className="body-formation">
                 <div className="card card-formation-1">
@@ -33,7 +47,11 @@ const Home = () => {
                         <li>- PCR niveau 1</li>
                         <li>- Renouvellement PCR Niveau 1</li>
                     </ul>
-                    <span><i><AiOutlineArrowRight/></i></span>
+                    <span>
+                        <i>
+                            <AiOutlineArrowRight />
+                        </i>
+                    </span>
                 </div>
                 <div className="card card-formation-2">
                     <h2>
@@ -51,7 +69,9 @@ const Home = () => {
                         <li>- Renouvellement PCR Niveau 2 toute option</li>
                     </ul>
                     <span>
-                        <i><AiOutlineArrowRight/></i>
+                        <i>
+                            <AiOutlineArrowRight />
+                        </i>
                     </span>
                 </div>
             </div>
