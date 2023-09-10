@@ -2,9 +2,9 @@ header {
   height: $header-height;
   display: flex;
   justify-content: center;
-  background-color: $background-3;
+  background: $main-color;
   padding: 0 5%;
-  box-shadow: 0px 2px 10px $shadow;
+  box-shadow: $shadow;
   font-size: $font-size-header-footer;
 
   .logonav-list {
@@ -22,16 +22,16 @@ header {
         
         li {
           a.font {
-            color: white;
+            color: $second-text-color;
             display: flex;
             align-items: center;
             height: $header-height;
-            padding: 15px;
+            padding: 0 15px;
             transition: 0.2s;
 
             &:hover,
             &.active{
-                background-color: $background-2;
+                background-color: $deriv-main-color;
             }
           }
         }
@@ -43,6 +43,7 @@ header {
         width: calc($header-height - 15px);
         height: calc($header-height - 15px);
         border-radius: 10px;
+        display: block;
       }
     }
   }

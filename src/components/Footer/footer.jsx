@@ -20,12 +20,12 @@ function footer() {
         <div className="footer-right">
           <div className="footer-right-icon">
             <div className="icon">
-              <a href="https://www.facebook.com/profile.php?id=100076339323176">
+              <a rel="noreferrer noopener" target="_blank" href="https://www.facebook.com/profile.php?id=100076339323176">
                 <FaFacebookSquare />
               </a>
             </div>
             <div className="icon">
-              <a href="https://www.linkedin.com/in/crpcr-formation-radioprotection-755773226">
+              <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/crpcr-formation-radioprotection-755773226">
                 <FaLinkedin />
               </a>
             </div>

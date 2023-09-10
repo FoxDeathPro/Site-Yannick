@@ -2,11 +2,6 @@ import React from "react";
 import {AiOutlineArrowRight} from "react-icons/ai";
 
 const Home = () => {
-
-    function handleClick() {
-        console.log("coucou");
-    }
-
     return (
         <div className="body">
             <div className="card-animation">
@@ -18,9 +13,6 @@ const Home = () => {
 
                     </p>
                 </div>
-            </div>
-            <div className="popu">
-                <div className="truc">NICK</div>
             </div>
             <div className="body-formation">
                 <div className="card card-formation-1">
