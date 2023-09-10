@@ -1,1 +1,123 @@
+.body {
+    position: static;
 
+    .card-animation {
+        width: 100%;
+        height: 400px;
+    }
+    // .popu {
+    //     position: fixed;
+    //     width: 100vw;
+    //     height: 100vh;
+    //     background: rgba(0,0,0,0.2);
+    //     z-index: 99999;
+    //     top: 0;
+    //     left: 0;
+
+    //     .truc {
+    //         position: fixed;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         background: white;
+    //         width: 80vw;
+    //         height: 90vh;
+    //         border-radius: 30px;
+    //     }
+    // }
+    .body-formation {
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: $deriv-background;
+        box-shadow: $shadow;
+        
+        .card-formation-1,
+        .card-formation-2 {
+            cursor: pointer;
+            position: relative;
+            width: 40%;
+            height: 200px;
+            background-color: $second-main-color;
+            border-radius: 15px;
+            box-shadow: $shadow;
+            color: $second-text-color;
+            overflow: hidden;  
+
+            h2 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                text-align: center;
+                transition: all 0.5s;
+            }
+            .list-formation {
+                position: absolute;
+                left: 40px;
+                top: 60%;
+                transform: translateY(-50%);
+                opacity: 0;
+                transition: all 0.1s ease-out;
+            }
+            span {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 0px;
+                height: 0px;
+                opacity: 0;
+                transition: all 0.2s ease-out;      
+                i{
+                    opacity: 0;
+                    transition: all 0s ease-out;
+                }    
+            }
+            &:hover {
+                
+                h2 {
+                    top: 20px;
+                    transform: translate(-50%, 0);
+                    font-size: 1.2em;
+                }
+                .list-formation {
+                    left: 20px;
+                    opacity: 1;
+                    transition: all 0.5s ease-in;
+                }
+                span {
+                    opacity: 1;
+                    transition: all 0.5s ease-out;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    transform: translate(50%, 50%);
+                    background: $main-color;
+                    
+                    i{
+                        opacity: 1;
+                        position: relative;
+                        top: 20%;
+                        left: 20%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .carousselles-avis {
+        width: 100%;
+        height: 250px;
+    }
+    .contact {
+        width: 100%;
+        height: 400px;
+        background: $deriv-background;
+        box-shadow: $shadow;
+    }
+}

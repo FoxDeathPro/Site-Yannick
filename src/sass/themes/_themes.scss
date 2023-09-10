@@ -2,27 +2,24 @@
                  themes.scss
 ================================================*/
 
-
-
 :root {
-    --main-bg-color: #F5F5F5;
-    --second-bg-color:rgb(1,130,146);
-    --third-bg-color: rgb(0,31,41);
-    --card-shadow-color: #666666;
-    --primary-text-color: #000000;
-    --secondary-text-color: #303030;
+    --background-color: rgba(245, 245, 245, 1);
+    --deriv-background-color: rgba(255, 255, 255, 1);
+    --main-color: rgba(0, 31, 41, 1);
+    --deriv-main-color: rgba(20, 45, 55, 1);
+    --second-main-color:rgba(1, 130, 146, 1);
+    --text-color: rgba(0, 0, 0, 1);
+    --deriv-text-color: rgba(48, 48, 48, 1);
+    --second-text-color: rgba(255, 255, 255, 1);
+    --deriv-second-text-color: rgba(245, 245, 245, 1);
 }
 
-[data-theme="dark"] {
-    --main-bg-color: #353535;
-    --card-shadow-color: #dadada;
-    --primary-text-color: #ebebeb;
-    --secondary-text-color: #c7c7c7;
-}
-
-$background: var(--main-bg-color) !default;
-$background-2: var(--second-bg-color) !default;
-$background-3: var(--third-bg-color) !default;
-$shadow: var(--card-shadow-color) !default;
-$main_text_color: var(--primary-text-color) !default;
-$second_text_color: var(--secondary-text-color) !default;
+$background: var(--background-color) !default;
+$deriv-background: var(--deriv-background-color) !default;
+$main-color: var(--main-color) !default;
+$deriv-main-color: var(--deriv-main-color) !default;
+$second-main-color: var(--second-main-color) !default;
+$text-color: var(--text-color) !default;
+$deriv-text-color: var(--deriv-text-color) !default;
+$second-text-color: var(--second-text-color) !default;
+$deriv-second-text-color: var(--deriv-second-text-color) !default;

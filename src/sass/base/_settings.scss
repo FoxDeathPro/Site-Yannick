@@ -9,7 +9,7 @@
     text-decoration: none;
 }
 
-*, :after, :before {
+:after, :before {
     box-sizing: border-box;
 }
 
@@ -26,6 +26,10 @@ a {
   display: block;
 }
 
+svg {
+    display: block;
+}
+
 button,
 select {
   text-transform: none;
@@ -33,12 +37,12 @@ select {
 
 html {
     background: $background;
-    color: $main_text_color;
-    -webkit-text-size-adjust: 100%; // 2
-    -ms-text-size-adjust: 100%; // 2
+    color: $text-color;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
-li{
+ul{
     list-style-type: none;
 }
 
@@ -46,3 +50,22 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+// Custom Scrollbar ?
+/*
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-track {
+    background: $deriv-background;
+    box-shadow: inset $shadow;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $deriv-main-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    filter: brightness(90%);
+}*/
