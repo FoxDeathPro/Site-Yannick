@@ -1,5 +1,6 @@
 import React from "react";
-import {AiOutlineArrowRight} from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import imgAgenda from "../../assets/Agenda.jpg";
 
 const Home = () => {
     return (
@@ -7,11 +8,8 @@ const Home = () => {
             <div className="card-animation">
                 <div>
                     <i></i>
-                    <h2>
-                    </h2>
-                    <p>
-
-                    </p>
+                    <h2></h2>
+                    <p></p>
                 </div>
             </div>
             <div className="body-formation">
@@ -25,7 +23,11 @@ const Home = () => {
                         <li>- PCR niveau 1</li>
                         <li>- Renouvellement PCR Niveau 1</li>
                     </ul>
-                    <span><i><AiOutlineArrowRight/></i></span>
+                    <span>
+                        <i>
+                            <AiOutlineArrowRight />
+                        </i>
+                    </span>
                 </div>
                 <div className="card card-formation-2">
                     <h2>
@@ -43,7 +45,9 @@ const Home = () => {
                         <li>- Renouvellement PCR Niveau 2 toute option</li>
                     </ul>
                     <span>
-                        <i><AiOutlineArrowRight/></i>
+                        <i>
+                            <AiOutlineArrowRight />
+                        </i>
                     </span>
                 </div>
             </div>
