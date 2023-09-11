@@ -1,27 +1,24 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import automaticDoor from "../../components/automatic-door/automatic-door";
 import imgAgenda from "../../assets/Agenda.jpg";
+import pLeft from "../../assets/Logo_p-leftsvg.svg";
+import pRight from "../../assets/Logo_p-rightsvg.svg";
 
 const Home = () => {
     return (
         <div className="body">
-            <div className="door">
-                <div className="door-left">
-                    <img src="" alt="" />
-                </div>
-                <div className="door-right">
-                    <img src="" alt="" />
-                </div>
-                <div>
-                    
-                </div>
-
-            </div>
             <div className="card-animation">
-                <div>
-                    <i></i>
-                    <h2></h2>
-                    <p></p>
+                <div className="bannière">
+                    <h3>lel</h3>
+                </div>
+                <div className="door">
+                    <div className="background-door-left">
+                        <img className="icone-door-left" src={pLeft} />
+                    </div>
+                    <div className="background-door-right">
+                        <img className="icone-door-right" src={pRight} />
+                    </div>
                 </div>
             </div>
             <div className="body-formation">
