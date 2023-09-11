@@ -5,6 +5,18 @@ import imgAgenda from "../../assets/Agenda.jpg";
 const Home = () => {
     return (
         <div className="body">
+            <div className="door">
+                <div className="door-left">
+                    <img src="" alt="" />
+                </div>
+                <div className="door-right">
+                    <img src="" alt="" />
+                </div>
+                <div>
+                    
+                </div>
+
+            </div>
             <div className="card-animation">
                 <div>
                     <i></i>
