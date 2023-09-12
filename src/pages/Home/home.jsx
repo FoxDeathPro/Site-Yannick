@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import automaticDoor from "../../components/automatic-door/automatic-door";
 import imgAgenda from "../../assets/Agenda.jpg";
 import pLeft from "../../assets/Logo_p-leftsvg.svg";
 import pRight from "../../assets/Logo_p-rightsvg.svg";
+import Modal from '../../components/Modal/modal';
 
 const Home = () => {
+
+    const [openModalForm1, setOpenModalForm1] = useState(false);
+
+    const [openModalForm2, setOpenModalForm2] = useState(false);
+
     return (
         <div className="body">
             <div className="card-animation">
@@ -21,8 +27,10 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Modal modalId="la-calotte-de-ses-morts" truc="coucou 1" isOpen={openModalForm1} updateModal={setOpenModalForm1} />
+            <Modal modalId="la-calotte-de-ses-morts-2" truc="coucou 2" isOpen={openModalForm2} updateModal={setOpenModalForm2} />
             <div className="body-formation">
-                <div className="card card-formation-1">
+                <div className="card card-formation-1" onClick={() => setOpenModalForm1(true)}>
                     <h2>
                         Formation de niveau 1<br />
                         (Médical et industriel)
@@ -38,7 +46,7 @@ const Home = () => {
                         </i>
                     </span>
                 </div>
-                <div className="card card-formation-2">
+                <div className="card card-formation-2" onClick={() => setOpenModalForm2(true)}>
                     <h2>
                         Formation de niveau 2<br />
                         (Médical et industriel)
