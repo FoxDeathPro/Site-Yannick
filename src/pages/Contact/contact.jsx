@@ -1,11 +1,11 @@
 import React from "react";
 
-const automaticDoor = () => {
+const contact = () => {
     return (
         <div>
-            
+
         </div>
     );
 };
 
-export default automaticDoor;
+export default contact;

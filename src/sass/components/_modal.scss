@@ -1,4 +1,4 @@
-.background-modal{
+.background-modal {
     &.active-modal {
         position: fixed;
         display: flex;
@@ -11,17 +11,19 @@
         background: rgba(0, 0, 0, 0.2);
         z-index: 99999999;
     }
-    
-    .modal{
+
+    .modal {
         padding: 20px;
         position: relative;
         height: 90%;
+        max-width: 900px;
+        max-height: 1050px;
         width: 70%;
         background-color: white;
         box-shadow: $shadow;
         border-radius: 40px;
         overflow: hidden;
-        .cross{
+        .cross {
             position: absolute;
             top: -17.5px;
             right: -55px;
@@ -40,32 +42,90 @@
                 color: $second-text-color;
             }
         }
-        .tittle-modal{
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-        }
-        .all-modal{
-            padding: 20px;
-            .content-modal{
-                margin-top: 10%;
-                font-size: 2em;
-                
-            }
-            .img-modal{
-                margin-top: 10%;
-                width: 100%;
-            }
-            .button-modal{
-                height: 200px;
-                width: 200px;
-    
-            }
-            .liste{
-                margin-top: 10px;
-                margin-left: 20px;
-            }
-        }
 
+        .all-modal {
+            padding: 20px;
+            .tittle-modal {
+                margin-top: 30px;
+                font-size: 2.2em;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            .display-content-modal {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                box-shadow: $shadow;
+                margin-top: 50px;
+                padding: 20px;
+                background-color: $second-main-color;
+                border-radius: 25px;
+                transition: transform .3s;
+                &:hover{
+                    transform: scale(1.04);
+                }
+                .content-modal {
+                    font-size: 2em;
+                    color: white;
+                }
+                .liste {
+                    text-align: center;
+                    padding: 5px;
+                    color: white;
+                }
+            }
+            .title-image-agenda {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 50px;
+
+                .title-agenda {
+                    font-size: 1.8em;
+                }
+                .image-agenda {
+                    box-shadow: $shadow;
+                    margin-top: 5%;
+                    width: 70%;
+                    border-radius: 25px;
+                    transition: transform .5s;
+                    &:hover{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+
+            .placement-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                box-shadow: $shadow;
+                margin-top: 50px;
+                padding: 20px;
+                background-color: $second-main-color;
+                border-radius: 25px;
+                .title-button {
+                    font-size: 1.8em;
+                    color: white;
+                }
+                .card-address {
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 90%;
+                    height: auto;
+                    border-radius: 50%;
+                    p {
+                        font-size: 1.5em;
+                        font: 500;
+                        color: white;
+                    }
+                }
+            }
+        }
     }
 }

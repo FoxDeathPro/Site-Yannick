@@ -19,22 +19,57 @@ const Modal = (props) => {
                         <i className="cross" onClick={closeModal}>
                             <RxCross2 />
                         </i>
-                        <h2 className="tittle-modal">{props.h2}</h2>
+
                         <div className="all-modal">
-                            <p className="content-modal">Formation</p>
-                            <ul>
-                                <li className="liste">{props.liste11}</li>
-                                <li className="liste">{props.liste12}</li>
-                            </ul>
-                            <p className="content-modal"> Renouvellement</p>
-                            <ul>
-                                <li className="liste">{props.liste11}</li>
-                                <li className="liste">{props.liste12}</li>
-                            </ul>
-                            <img className="img-modal" src={props.img} alt="" />
-                            <button className="button-modal">
-                                {props.button}
-                            </button>
+                            <h2 className="tittle-modal">{props.h2}</h2>
+                            <div className="display-content-modal">
+                                <div className="color-content-modal">
+                                    <p className="content-modal">Formation</p>
+                                    <ul>
+                                        <li className="liste">
+                                            {props.liste11}
+                                        </li>
+                                        <li className="liste">
+                                            {props.liste12}
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="color-content-modal">
+                                    <p className="content-modal">
+                                        {" "}
+                                        Renouvellement
+                                    </p>
+                                    <ul>
+                                        <li className="liste">
+                                            {props.liste11}
+                                        </li>
+                                        <li className="liste">
+                                            {props.liste12}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="title-image-agenda">
+                                <h3 className="title-agenda">
+                                    Agenda de formation
+                                </h3>
+                                <img
+                                    className="image-agenda"
+                                    src={props.img}
+                                    alt=""
+                                />
+                            </div>
+                            <div className="placement-button">
+                                <h3 className="title-button">{props.h3}</h3>
+                                <div className="card-address">
+                                    <button className="button-contact-modal">
+                                        <p>Address</p>
+                                    </button>
+                                    <button className="button-contact-modal">
+                                        <p>Contact</p>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

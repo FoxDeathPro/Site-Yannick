@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 // import automaticDoor from "../../components/automatic-door/automatic-door";
 import imgAgenda from "../../assets/Agenda.jpg";
+import imgMaps from "../../assets/itineraire-maps.jpg";
 import imgYannick from "../../assets/Yannick.jpg";
 import pLeft from "../../assets/Logo_p-leftsvg.svg";
 import pRight from "../../assets/Logo_p-rightsvg.svg";
@@ -44,9 +45,10 @@ const Home = () => {
                 modalId="la-calotte-de-ses-morts"
                 h2="Personne Compétente en Radioprotection de niveau 1"
                 p="j'ai plein de truc a dire genre vraiment beaucoup beaucoup <br /> un autre turc"
-                liste11 ="-PCR niveau 1"
-                liste21 = "-PCR niveau 1"
+                liste11="-PCR niveau 1"
+                liste21="-PCR niveau 1"
                 img={imgAgenda}
+                h3="Itinéraire Formation"
                 button=""
                 isOpen={openModalForm1}
                 updateModal={setOpenModalForm1}
@@ -55,10 +57,13 @@ const Home = () => {
                 modalId="la-calotte-de-ses-morts-2"
                 h2="Personne Compétente en Radioprotection de niveau 1"
                 p="j'ai plein de truc a dire genre vraiment beaucoup beaucoup <br /> un autre turc"
-                liste11 ="PCR niveau 2 sources scellées et générateurs de RX"
-                liste12 ="PCR Niveau 2 Sources scellées, Non scellées et générateurs de RX"
+                liste11="-PCR niveau 2 sources scellées et générateurs de RX"
+                liste12="-PCR Niveau 2 Sources scellées, Non scellées et générateurs de RX"
                 img={imgAgenda}
-                button=""
+                h3="Itinéraire Formation"
+                imgAdress={imgMaps}
+                buttonAdresse=""
+                buttonMaps=""
                 isOpen={openModalForm2}
                 updateModal={setOpenModalForm2}
             />
@@ -108,7 +113,13 @@ const Home = () => {
                 </div>
             </div>
             <div className="carousselles-avis"></div>
-            <div className="contact"></div>
+            <div className="contact">
+                <button className="button-contact">
+                    <p className="content-contact">Contact</p>
+                    <p className="clique-contact">Clique !</p>
+                    <span className="radio">&#9762;</span>
+                </button>
+            </div>
         </div>
     );
 };
