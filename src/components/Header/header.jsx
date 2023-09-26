@@ -31,6 +31,11 @@ const header = () => {
                 Contact
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/maps" className="font">
+                Maps
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>

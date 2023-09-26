@@ -1,0 +1,131 @@
+.background-modal {
+    &.active-modal {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 99999999;
+    }
+
+    .modal {
+        padding: 20px;
+        position: relative;
+        height: 90%;
+        max-width: 900px;
+        max-height: 1050px;
+        width: 70%;
+        background-color: white;
+        box-shadow: $shadow;
+        border-radius: 40px;
+        overflow: hidden;
+        .cross {
+            position: absolute;
+            top: -17.5px;
+            right: -55px;
+            font-size: 1.6em;
+            cursor: pointer;
+            width: 150px;
+            height: 75px;
+            background: $second-main-color;
+            transform: rotate(45deg);
+
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 53%;
+                transform: rotate(-45deg) translate(-50%, -50%);
+                color: $second-text-color;
+            }
+        }
+
+        .all-modal {
+            padding: 20px;
+            .tittle-modal {
+                margin-top: 30px;
+                font-size: 2.2em;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            .display-content-modal {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                box-shadow: $shadow;
+                margin-top: 50px;
+                padding: 20px;
+                background-color: $second-main-color;
+                border-radius: 25px;
+                transition: transform .3s;
+                &:hover{
+                    transform: scale(1.04);
+                }
+                .content-modal {
+                    font-size: 2em;
+                    color: white;
+                }
+                .liste {
+                    text-align: center;
+                    padding: 5px;
+                    color: white;
+                }
+            }
+            .title-image-agenda {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 50px;
+
+                .title-agenda {
+                    font-size: 1.8em;
+                }
+                .image-agenda {
+                    box-shadow: $shadow;
+                    margin-top: 5%;
+                    width: 70%;
+                    border-radius: 25px;
+                    transition: transform .5s;
+                    &:hover{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+
+            .placement-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                box-shadow: $shadow;
+                margin-top: 50px;
+                padding: 20px;
+                background-color: $second-main-color;
+                border-radius: 25px;
+                .title-button {
+                    font-size: 1.8em;
+                    color: white;
+                }
+                .card-address {
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 90%;
+                    height: auto;
+                    border-radius: 50%;
+                    p {
+                        font-size: 1.5em;
+                        font: 500;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
