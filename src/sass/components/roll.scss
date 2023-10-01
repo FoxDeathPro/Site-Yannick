@@ -1,0 +1,82 @@
+.roll{
+    .roll-title-content-img{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+        margin-bottom: -20px;
+        .roll-title-top{
+            color: white;
+            text-align: center;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 10px;
+            width: 300px;
+            background-color: $main-color;
+            box-shadow: $shadow;
+        }
+        .roll-title-bottom{
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            padding: 10px;
+            width: 300px;
+            background-color: $main-color;
+            box-shadow: $shadow;
+        }
+        .roll-content{
+            color: white;
+            border-radius: 25px;
+            background-color: $second-main-color;
+            box-shadow: $shadow;
+            padding: 20px;
+            max-width: 650px;
+            min-height: 175px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-bottom-right{
+            position: relative;
+            top: -70px;
+            left: 325px;
+            z-index: 10;
+            width: 110px;
+            height: 110px;
+            border-radius: 100%;
+            box-shadow: $shadow;
+        }
+        .img-bottom-left{
+            position: relative;
+            top: -70px;
+            left: -325px;
+            z-index: 10;
+            width: 110px;
+            height: 110px;
+            border-radius: 100%;
+            box-shadow: $shadow;
+        }
+        .img-top-right{
+            position: relative;
+            top: -265px;
+            left: 325px;
+            z-index: 10;
+            width: 110px;
+            height: 110px;
+            border-radius: 100%;
+            box-shadow: $shadow;
+        }
+        .img-top-left{
+            position: relative;
+            top: -265px;
+            left: -325px;
+            z-index: 10;
+            width: 110px;
+            height: 110px;
+            border-radius: 100%;
+            box-shadow: $shadow;
+        }
+    }
+}

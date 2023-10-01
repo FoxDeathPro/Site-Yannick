@@ -1,8 +1,8 @@
 .layout {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: $background;
 
-    main{
-      min-height: calc(100vh - $header-height - $footer-height);
+    main {
+        min-height: calc(100vh - $header-height - $footer-height);
     }
 }

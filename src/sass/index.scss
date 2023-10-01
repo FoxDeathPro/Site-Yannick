@@ -10,16 +10,18 @@
 // Import Components
 @import "./layout/footer";
 @import "./layout/header";
-@import "./pages//home.scss";
+@import "./pages//home";
 
 @import "./components/keyframes";
-@import "./components/buttons.scss";
+@import "./components/buttons";
 @import "./components/modal";
-@import "./components/collapse";
+@import "./components/roll.scss";
 
 // Import Pages
 @import "./layout/layout";
 @import "./pages/tests";
+@import "./pages/corp";
+@import "./pages/contact";
 
 
 
