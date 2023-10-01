@@ -1,0 +1,13 @@
+
+.Corp{
+    display: flex;
+    justify-content: center;
+    .placement-roll{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1550px;
+        margin-top: 80px;
+        
+    }
+}

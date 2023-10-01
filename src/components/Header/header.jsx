@@ -17,13 +17,8 @@ const header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/agenda" className="font">
+              <NavLink to="/corp" className="font">
                 L'entreprise
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/tests" className="font">
-                Tests
               </NavLink>
             </li>
             <li>
