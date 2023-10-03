@@ -6,6 +6,7 @@ import Error from "./pages/Error/error";
 import Tests from "./pages/Tests/tests";
 import Contact from "./pages/Contact/contact";
 import Corp from "./pages/Corp/corp";
+import Maps from "./pages/Maps/maps";
 
 const Router = () => {
     return (
@@ -16,7 +17,7 @@ const Router = () => {
                     <Route path="corp" element={<Corp />} />
                     <Route path="contact" element={<Contact />} />
                     <Route path="tests" element={<Tests />} />
-                    <Route path="contact" element={<Contact />} />
+                    <Route path="maps" element={<Maps />} />
                     <Route path="*" element={<Error />} />
                 </Route>
             </Routes>

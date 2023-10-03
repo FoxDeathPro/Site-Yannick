@@ -17,6 +17,17 @@
     width: 100%;
     padding: 0 5%;
     max-width: 1600px;
+    .footer-center-link {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      .link{
+          color: $second-text-color;
+          display: flex;
+          margin-bottom: 10px;
+      }
+    }
 
     .footer-left {
       padding: 10px 0;

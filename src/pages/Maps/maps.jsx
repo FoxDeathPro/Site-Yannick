@@ -1,12 +1,11 @@
-import React from 'react';
-import Slider from "../../components/Caroussel/slider"
-import image from "../../assets/Agenda.jpg"
+import React from "react";
+// import { Carousel } from "../../components/Carousel/Carousel";
+// import  slides  from "../../data/carouselData.json";
 
 const maps = () => {
     return (
-        <div className='slider'>
-            <Slider
-            images={image}/>
+        <div>
+            {/* <Carousel data={slides} /> */}
         </div>
     );
 };

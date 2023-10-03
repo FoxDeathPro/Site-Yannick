@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
 
 const Modal = (props) => {
@@ -60,13 +61,16 @@ const Modal = (props) => {
                                 />
                             </div>
                             <div className="placement-button">
-                                <h3 className="title-button">{props.h3}</h3>
                                 <div className="card-address">
                                     <button className="button-contact-modal">
-                                        <p>Address</p>
+                                        <NavLink to="/maps" className="font">
+                                        <p>Itineraire</p>
+                                        </NavLink>
                                     </button>
                                     <button className="button-contact-modal">
-                                        <p>Contact</p>
+                                        <NavLink to="/contact" className="font">
+                                            <p>Contact</p>
+                                        </NavLink>
                                     </button>
                                 </div>
                             </div>

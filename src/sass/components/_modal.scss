@@ -47,17 +47,18 @@
             padding: 10px;
             .tittle-modal {
                 margin-top: 20px;
+                margin-left: 20px;
                 font-size: 2em;
                 display: flex;
-                justify-content: center;
                 text-align: center;
             }
             .display-content-modal {
                 display: flex;
                 justify-content: space-around;
-                align-items: center;
+                flex-direction: column;
+
                 box-shadow: $shadow;
-                min-height: 160px;
+                min-height: 215px;
                 margin-top: 20px;
                 padding: 20px;
                 background-color: $second-main-color;
@@ -71,8 +72,8 @@
                     color: white;
                 }
                 .liste {
-                    text-align: center;
                     padding: 5px;
+                    margin-left: 15px;
                     color: white;
                 }
             }
@@ -84,16 +85,16 @@
                 margin-top: 35px;
 
                 .title-agenda {
-                    font-size: 1.5em;
+                    font-size: 1.7em;
                 }
                 .image-agenda {
                     box-shadow: $shadow;
-                    margin-top: 5%;
+                    margin-top: 3%;
                     width: 50%;
                     border-radius: 25px;
                     transition: transform .5s;
                     &:hover{
-                        transform: scale(2);
+                        transform: scale(2.1);
                     }
                 }
             }
@@ -103,6 +104,7 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                height: 120px;
                 box-shadow: $shadow;
                 margin-top: 30px;
                 padding: 20px;
@@ -113,7 +115,6 @@
                     color: white;
                 }
                 .card-address {
-                    margin-top: 30px;
                     display: flex;
                     justify-content: space-around;
                     align-items: center;

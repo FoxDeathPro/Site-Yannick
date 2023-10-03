@@ -28,10 +28,11 @@
                 justify-content: space-around;
                 .img-banner {
                     border-radius: 50%;
-                    height: 100px;
+                    height: 150px;
                 }
                 .content-banner {
-                    padding-left: 10px;
+                    padding-left: 30px;
+                    font-size: 1.2em;
                 }
             }
             .titlte-banner {
@@ -50,7 +51,6 @@
             .background-door-left {
                 animation: door-left 1.6s ease-in-out;
                 animation-fill-mode: forwards;
-                animation-delay: 0.5s ease-in;
                 z-index: 1000;
                 position: relative;
                 transition: all 1s;
@@ -69,7 +69,6 @@
             .background-door-right {
                 animation: door-right 1.6s ease-in-out;
                 animation-fill-mode: forwards;
-                animation-delay: 0.5s ease-in;
                 z-index: 1000;
                 position: relative;
                 transition: all 1s;
@@ -230,12 +229,11 @@
         height: 250px;
     }
     .contact {
-        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 400px;
+        height: 300px;
         background: $deriv-background;
         box-shadow: $shadow;
     }

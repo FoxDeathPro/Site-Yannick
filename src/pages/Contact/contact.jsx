@@ -1,8 +1,10 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { validEmail, validName } from "../../components/Regex/regex";
+// import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
+    // const captchaRef = useRef(null);
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [emailErr, setEmailErr] = useState(false);
@@ -71,10 +73,10 @@ const Contact = () => {
                             placeholder="Message..."
                             className="message-input input"
                         />
-                        <button
-                        className="button-send"
-                        onClick={validate}
-                        >Validé !</button>
+                        <button className="button-send" onClick={validate}>
+                            Validé !
+                        </button>
+                        {/* <ReCAPTCHA sitekey={process.env.REACT_APP_SITE_KEY} /> */}
                     </form>
                 </div>
             </div>

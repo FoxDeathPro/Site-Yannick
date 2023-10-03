@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 // import automaticDoor from "../../components/automatic-door/automatic-door";
 import imgAgenda from "../../assets/Agenda.jpg";
@@ -45,8 +46,8 @@ const Home = () => {
                 modalId="la-calotte-de-ses-morts"
                 h2="Personne Compétente en Radioprotection de niveau 1"
                 p="j'ai plein de truc a dire genre vraiment beaucoup beaucoup <br /> un autre turc"
-                liste11="-PCR niveau 1"
-                liste21="-PCR niveau 1"
+                liste11="- Personne Compétente en Radioprotection niveau 1"
+                liste21="- Personne Compétente en Radioprotection niveau 1"
                 img={imgAgenda}
                 h3="Itinéraire Formation"
                 button=""
@@ -57,8 +58,8 @@ const Home = () => {
                 modalId="la-calotte-de-ses-morts-2"
                 h2="Personne Compétente en Radioprotection de niveau 1"
                 p="j'ai plein de truc a dire genre vraiment beaucoup beaucoup <br /> un autre turc"
-                liste11="-PCR niveau 2 sources scellées et générateurs de RX"
-                liste12="-PCR Niveau 2 Sources scellées, Non scellées et générateurs de RX"
+                liste11="- PCR niveau 2 sources scellées et générateurs de RX"
+                liste12="- PCR Niveau 2 Sources scellées, Non scellées et générateurs de RX"
                 img={imgAgenda}
                 h3="Itinéraire Formation"
                 imgAdress={imgMaps}
@@ -114,11 +115,13 @@ const Home = () => {
             </div>
             <div className="carousselles-avis"></div>
             <div className="contact">
-                <button className="button-contact">
-                    <p className="content-contact">Contact</p>
-                    <p className="clique-contact">Clique !</p>
-                    <span className="radio">&#9762;</span>
-                </button>
+                <NavLink to="/contact">
+                    <button className="button-contact">
+                        <p className="content-contact">Contact</p>
+                        <p className="clique-contact">Clique !</p>
+                        <span className="radio">&#9762;</span>
+                    </button>
+                </NavLink>
             </div>
         </div>
     );
