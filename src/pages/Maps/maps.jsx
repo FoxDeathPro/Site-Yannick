@@ -1,13 +1,25 @@
 import React from "react";
-// import { Carousel } from "../../components/Carousel/Carousel";
-// import  slides  from "../../data/carouselData.json";
+import Slider from "../../components/Slider/Carousel";
 
-const maps = () => {
+
+const Addres = () => {
+    const slides = [
+        { title: "beach" },
+        { title: "boat" },
+        { title: "forest" },
+      ];
+      const containerStyles = {
+        width: "500px",
+        height: "280px",
+        margin: "0 auto",
+      };
     return (
         <div>
-            {/* <Carousel data={slides} /> */}
+          <div style={containerStyles}>
+            <Slider slides={slides} />
+          </div>
         </div>
-    );
+      );
 };
 
-export default maps;
+export default Addres;

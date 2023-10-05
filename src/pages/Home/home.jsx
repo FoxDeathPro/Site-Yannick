@@ -24,13 +24,36 @@ const Home = () => {
                     </h3>
                     <div className="img-content-banner">
                         <img className="img-banner" src={imgYannick} alt="" />
-                        <p className="content-banner">
-                            Bonjour et Bienvenu ! <br /> CRPCR est une
-                            entreprise de formation des Personne Compétente en
-                            Radioprotection. <br /> Vous trouverz sur ce site
-                            plus d'information sur les formations ainsi que la
-                            possibilité de nous contacter.
-                        </p>
+                        <div>
+                            <p className="content-banner">
+                                Je travaille dans le domaine de la
+                                radioprotection Médicale depuis plus de 20ans.
+                                J'ai travaillé au Centre François Baclesse de
+                                Caen au sein de l'unité de Radiophysique et de
+                                Radioprotection de 1999 à 2008. Depuis 2008, je
+                                suis responsable du Service Compétent en
+                                Radioprotection du CHU de Caen. Ma carrière m'a
+                                permis de travailler dans tout les domaines
+                                médicaux utilisant des rayonnements ionisants.
+                            </p>
+
+                            <ul className="content-banner-list">
+                                <li>- Radiothérapie / Curiethérapie</li>
+                                <li>-Médecine Nucléaire / Laboratoire</li>
+                                <li>
+                                    - Radiologie Interventionnelle /
+                                    Conventionnelle
+                                </li>
+                                <li>- Bloc Opératoire</li>
+                                <li>- Etc... </li>
+                            </ul>
+                            <p className="content-banner">
+                                Je suis également Officier Expert SPV au sein du
+                                SDIS14 depuis 2011. J'assure l'ensemble des
+                                formations des Sapeurs-Pompiers spécialisés en
+                                Risque Radiologique.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div className="door">
