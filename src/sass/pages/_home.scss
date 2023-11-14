@@ -230,18 +230,11 @@
             }
         }
     }
-
-    .carousselles-avis {
-        width: 100%;
-        height: 250px;
-    }
     .contact {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 300px;
-        background: $deriv-background;
-        box-shadow: $shadow;
     }
 }

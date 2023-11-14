@@ -29,8 +29,8 @@ const header = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/maps" className="font">
-                                Maps
+                            <NavLink to="/address" className="font">
+                                Adresses
                             </NavLink>
                         </li>
                     </ul>

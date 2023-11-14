@@ -17,7 +17,6 @@ function footer() {
                                 className="footer-left-logoPP"
                             />
                         </NavLink>
-                        <h2 className="footer-left-title-un">CRPCR</h2>
                     </div>
                     <div className="footer-left-deux">
                         <a href="https://www.apercora.com/">
@@ -27,7 +26,6 @@ function footer() {
                                 className="footer-left-apercora"
                             />
                         </a>
-                        <h2 className="footer-left-title-deux">Apercora</h2>
                     </div>
                 </div>
                 <div className="footer-center">

@@ -136,7 +136,9 @@ const Home = () => {
                     </span>
                 </div>
             </div>
-            <div className="carousselles-avis"></div>
+            <div className="carousselles-avis">
+                
+            </div>
             <div className="contact">
                 <NavLink to="/contact">
                     <button className="button-contact">
