@@ -1,0 +1,40 @@
+.error {
+    font-size: clamp(6rem, 20vw, 18rem);
+    font-weight: 700;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: $second-main-color;
+  }
+  .oups {
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+    color: $second-main-color;
+    font-weight: 500;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .return {
+    font-size: clamp(0.9rem, 1.5vw, 3rem);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    color: $second-main-color;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 80px;
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 700px) {
+    .oups {
+      margin-bottom: 80px;
+    }
+    .link {
+      margin-bottom: 80px;
+    }
+  }
+  

@@ -12,28 +12,30 @@
     border-top-left-radius: 200px;
     border-bottom-left-radius: 200px;
     font-size: 1.8em;
-    transition: all 0.8s ease-in-out;
     .radio {
         position: relative;
         font-size: 165px;
         top: -9%;
         left: -62%;
         transition: all 0.8s ease-in-out;
+        animation-fill-mode: backwards;
     }
-    .content-contact{
+    .content-contact {
         position: relative;
         left: 50%;
         opacity: 1;
         transition: all 0.8s ease-in-out;
+        animation-fill-mode: backwards;
     }
-    .clique-contact{
+    .clique-contact {
         position: relative;
         left: -10%;
         opacity: 0;
         transition: all 0.8s ease-in-out;
+        animation-fill-mode: backwards;
     }
     &:hover {
-        .radio{
+        .radio {
             animation: radio-translate 0.8s ease-in-out;
             animation-fill-mode: forwards;
         }
@@ -41,17 +43,14 @@
             animation: content-opacity 0.8s ease-in-out;
             animation-fill-mode: forwards;
         }
-        .clique-contact{
+        .clique-contact {
             animation: clique-opacity 0.8s ease-in-out;
             animation-fill-mode: forwards;
         }
     }
 }
 
-
-
-
-.button-contact-modal{
+.button-contact-modal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,15 +64,13 @@
     border-bottom-right-radius: 200px;
     border-top-left-radius: 200px;
     border-bottom-left-radius: 200px;
-    transition: transform .3s;
-    &:hover{
+    transition: transform 0.3s;
+    &:hover {
         transform: scale(1.09);
     }
 }
 
-
-
-.button-send{
+.button-send {
     width: 200px;
     height: 50px;
     font-size: 1.2em;
@@ -82,10 +79,9 @@
     border-radius: 20px;
     color: white;
     background-color: $deriv-main-color;
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.09);
+    }
 }
-
-
-
-
-
-
